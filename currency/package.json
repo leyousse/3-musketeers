@@ -10,7 +10,8 @@
   "dependencies": {
     "axios": "^0.19.2",
     "money": "^0.2.0",
-    "ora": "^4.0.3"
+    "ora": "^4.0.3",
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "jest": "^25.1.0",

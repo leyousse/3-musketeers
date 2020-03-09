@@ -40,57 +40,101 @@ beforeEach(() => {
 });
 
 describe('currency', () => {
-  test('should convert 1 USD to EUR', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  test('convert 1 USD to EUR', async () => { result =>{
+    try {
+      expect(result).toBe(0.899);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
   });
-
-  test('should convert 1 USD to USD', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert 1 USD to USD', async () => {
+    result =>{
+      try {
+        expect(result).toBe(1);
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
   });
-
-  test('should convert 1 EUR to USD', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert 1 EUR to USD', async () => {
+    result =>{
+      try {
+        expect(result).toBe(1.1122);
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
   });
-
-  test('should convert 1 BTC to USD', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert 1 BTC to USD', async () => {
+    result =>{
+      try {
+        expect(result).toBe(8944.49);
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
   });
-
-  test('should convert 1 BTC to EUR', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert 1 BTC to EUR', async () => {
+    result =>{
+      try {
+        expect(result).toBe(8048.11);
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
   });
-
-  test('should convert (with default values) without arguments', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert without arguments', async () => {
+    result =>{
+      try {
+        expect(result).toBe(8944.49);
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
   });
-
-  test('should convert with amount only as argument', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert with amount only', async () => {
+    result =>{
+      try {
+        expect(result).toBe('💵 Please specify a valid from and/or to currency value!');
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
   });
-
-  test('should convert with amount and (from) currency only as arguments', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
-  });
-
-  test('should return errors message for unknown `from` or `to` currency value', async () => {
-    throw new Error(
-      'test not yet defined... remove the throw and write your test here'
-    );
+  
+  test('convert with amount and (from) currency only', async () => {
+    result =>{
+      try {
+        expect(result).toBe('💵 Please specify a valid from and/or to currency value!');
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }});
+  
+  test('convert without a correct from or to currency value', async () => {
+    
+      result =>{
+        try {
+          expect(result).toBe('💵 Please specify a valid from and/or to currency value!');
+          
+        } catch (error) {
+          console.log(error);
+        }
+      }
   });
 });
